@@ -34,8 +34,8 @@
                 <li><a href="#">Ayuda</a></li>
             </ul>
             <ul class="login-bar-elements">
-                <li><a href="#">Creá tu cuenta <i class="fa-regular fa-address-card"></i></a></li>
-                <li><a href="#">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="/register">Creá tu cuenta <i class="fa-regular fa-address-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
                 <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></i></a></li>
             </ul>
         </nav>
@@ -45,7 +45,19 @@
         </div>
     </header>
     <main>
-        <form action="/register"></form>
+        form action="/register" method="post">
+            <label for="name-surname">Nombre Y Apellido: </label>
+            <input type="text" id="name-surname" required>
+            <label for="username" >Nombre de usuario: </label>
+            <input type="text" id="username" required>
+            <label for="birthdate">Fecha de nacimiento: </label>
+            <input type="date" id="birthdate" required>
+            <label for="residence">Domicilio: </label>
+            <input type="text" id="residence">
+            <label for="user-profile">Perfil del usuario</label>
+            <input type="text" id="">
+            <button type="submit"><a href="/">Enviar</a></button>
+        </form>
     </main>
     <footer>
         <div class="txt-footer">
