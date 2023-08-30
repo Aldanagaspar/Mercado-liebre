@@ -60,4 +60,11 @@ label{
     padding: .8em 0;
     border: none;
     border-radius: .5em;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button-submit:hover {
+    background-color: #0022AA;
+    color: #FFFFFF; 
 }

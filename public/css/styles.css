@@ -114,8 +114,8 @@ main {
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-    margin-bottom: 10px; /* Separación entre artículos */
-    border-top: 1px solid #ebebeb; /* Borde superior */
+    margin-bottom: 10px;
+    border-top: 1px solid #ebebeb; 
 }
 .box{
     background-color: white;

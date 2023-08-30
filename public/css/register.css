@@ -129,6 +129,13 @@ main{
     border: none;
     border-radius: .5em;
     margin-right:30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button-submit:hover {
+    background-color: #0022AA;
+    color: #FFFFFF; 
 }
 .button-delete{
     width: 40%;
