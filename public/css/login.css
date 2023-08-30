@@ -7,7 +7,6 @@ main{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
     display: flex;
-    min-height: 100vh;
 }
 .form{
     background-color: #fff;
@@ -18,6 +17,7 @@ main{
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
     text-align: left;
     border-radius: 2em;
+    margin: 3vw auto;
 }
 .form-title{
     font-size: 2rem;
@@ -42,6 +42,7 @@ main{
     padding: .6em .3em;
     border: 1px solid rgb(105, 103, 103);
     border-radius: 4px;
+    padding-left: 15px;
 }   
 label{
     position: relative;
@@ -51,7 +52,6 @@ label{
 }
 .button-submit{
     text-align: center;
-    justify-content: center;
     background-color: #5d8ddf;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -61,22 +61,3 @@ label{
     border: none;
     border-radius: .5em;
 }
-/*main {
-    display: flex;
-
-}
-.container-form{
-    display: flex;
-    background-color: white;
-    padding: 2em;
-    margin: 2em;
-}
-.title{
-    display: block;
-    margin-bottom: 2em;
-}
-.content{
-    display: flex;
-    flex-direction: column;
-    gap: 150px;
-}*/

@@ -46,28 +46,31 @@
         </div>
     </header>
     <main>
-        <form class="form" action="/register" method="post">
+        <div class="form-container">
             <h3 class="form-title">Registro</h3>
-            <div class="form-container">
-                <div class="form-items">
-                    <label for="name-surname">Nombre y Apellido </label>
-                    <input class="form-input" type="text" id="name-surname" required placeholder="Nombre y Apellido">
-                </div>
-                <div class="form-items">
-                    <label for="username">Nombre de usuario </label>
-                    <input type="text" id="username" required placeholder="Nombre de usuario" min="10">
-                </div>
-                <div class="form-items">
-                    <label for="birthdate">Fecha de nacimiento </label>
-                    <input type="date" id="birthdate" required>
-                </div>
-                <div class="form-items">
-                    <label for="residence">Domicilio </label>
-                    <input type="text" id="residence" placeholder="Domicilio">
+            <form action="/register.html" class="form">
+                <div class="user-data">
+                    <div class="form-items">
+                        <label for="name-surname">Nombre y Apellido </label>
+                        <input class="form-input" type="text" id="name-surname" required
+                            placeholder="Nombre y Apellido">
+                    </div>
+                    <div class="form-items">
+                        <label for="username">Nombre de usuario </label>
+                        <input type="text" id="username" required placeholder="Nombre de usuario" min="10">
+                    </div>
+                    <div class="form-items">
+                        <label for="birthdate">Fecha de nacimiento </label>
+                        <input type="date" id="birthdate" required>
+                    </div>
+                    <div class="form-items">
+                        <label for="residence">Domicilio </label>
+                        <input type="text" id="residence" placeholder="Domicilio">
+                    </div>
                 </div>
                 <div class="form-radio-checkbox">
                     <div class="form-radio">
-                        <label for="user-profile">Perfil del usuario </label>
+                        <label for="user-profile">Perfil del usuario: </label>
                         <div>
                             <input type="radio" id="seller" name="drone" value="seller" checked />
                             <label for="seller">Vendedor</label>
@@ -101,23 +104,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-items">
-                  <label for="img-user">Foto de usuario</label>
-                  <input type="file" id="img-user" name="img-user" accept=".jpg, .png">
+                <div class="form-user">
+                    <label for="img-user">Foto de usuario</label>
+                    <input type="file" id="img-user" name="img-user" accept=".jpg, .png">
                 </div>
                 <div class="form-password">
-                  <div class="form-items">
-                     <label for="password">Contraseña</label>
-                     <input type="password" name="password" id="password" required>
-                  </div>
-                  <div class="form-items">
-                      <label for="password">Confirmar contraseña</label>
-                      <input type="password" name="password" id="password" required>
-                  </div>
+                    <div class="form-items">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="form-items">
+                        <label for="password">Confirmar contraseña</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
                 </div>
-            </div>
-            <button class="button-submit" type="submit">Enviar</button>
-        </form>
+                <div class="buttons">
+                    <button class="button-delete" type="reset">Borrar</button>
+                    <button class="button-submit" type="submit" >Enviar</button>
+                </div>
+            </form>
+            
+        </div>
     </main>
     <footer>
         <div class="txt-footer">

@@ -1,61 +1,123 @@
-/**{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 main{
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
     display: flex;
-    min-height: 100vh;
-}
-.form{
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    margin-top: 30px;
-    margin: auto;
-    width: 90%;
-    max-width: 600px;
-    padding: 4em 3em;
-    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
-    text-align: left;
-    border-radius: 2em;
-}
-.form-title{
-    font-size: 3rem;
-    margin-bottom: .5em;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: #ebebeb;
 }
 .form-container{
-    margin-top: 3em;
+    margin: 3vw auto;
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+}
+.form-title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.form .user-data{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+.user-data .form-items{
+    margin-bottom: 15px;
+    width: 50%;
+}
+.user-data .form-items input{
+    height: 45px;
+    width: 90%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(105, 103, 103);
+    padding-left: 15px;
+}
+.user-data .form-items label {
+    margin-bottom: 15px;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.form-radio {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-checkbox label{
+    display: block;
+    margin: 10px 0;
+}
+
+.form-checkbox div {
+    margin: 5px 0;
+    display: flex;
+    gap: 3px 15px;
+}
+.form-items {
     display: flex;
     flex-direction: column;
-    gap: 2.5em;
 }
-.form-items{
-    position: relative;
-   color: #5757577e;
-}
-.form-input{
-    position: relative;
-    top: 1em;
-    right: 4rem;
-    width: 40%;
-    background: none;
-    color: #706c6c;
-    font-size: 1rem;
-    padding: .6em .3em;
-    border: 1px solid rgb(105, 103, 103);
-    border-radius: 4px;
-}   
-label{
-    position: relative;
-    bottom: 10px;
+.form .form-items label {
+    margin-bottom: 15px;
+    display: block;
     font-size: 1.2em;
-    padding-bottom:2em ;
+    font-weight: 500;
+    margin-bottom: 5px;
 }
+.form-password .form-items{
+    margin-bottom: 15px;
+    width: 50%;
+}
+.form .form-password{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+.form .form-password input{
+    height: 45px;
+    width: 90%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(105, 103, 103);
+    padding-left: 15px;
+}
+.form-checkbox label{
+    margin-bottom: 15px;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.form-radio label{
+    margin-bottom: 15px;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
 .button-submit{
+    width: 40%;
     text-align: center;
     justify-content: center;
     background-color: #5d8ddf;
@@ -66,24 +128,26 @@ label{
     padding: .8em 0;
     border: none;
     border-radius: .5em;
-}*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    margin-right:30px;
 }
-main{
-    display: flex;
-    height: 100vh;
+.button-delete{
+    width: 40%;
+    text-align: center;
     justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background: #ebebeb;
+    background-color: #d84040;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
 }
-.form-container{
-    max-width: 700px;
-    width: 100%;
-    background: white;
-    padding: 25px 30px;
+.form-user{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 5px;
 }
