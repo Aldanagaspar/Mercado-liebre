@@ -208,6 +208,7 @@ footer div i:hover {
     color: rgb(168, 230, 168);
 }
 footer .fa-solid {
+    cursor: pointer;
     color: #5d8ddf;
     font-size: 2em;
     margin-bottom: 2px;
